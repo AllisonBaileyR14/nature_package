@@ -1,4 +1,11 @@
-# This function reports the total number of fish caught, the most common fish species caught, and the rarest fish species caught from an inputted .txt file listing all fish caught. User can change default settings to "TRUE" to also display a histogram of the number of fish caught per species.
+#' fish_distribution
+#'
+#' This function reports the total number of fish caught, the most common fish species caught, and the rarest fish species caught from an inputted .txt file listing all fish caught. User can change default settings to "TRUE" to also display a histogram of the number of fish caught per species.
+#' @param fish_data data frame that lists fish that were caught
+#' @param show_plot user specifies argument to show histogram.  Currently,the default is set at FALSE.
+#' @return A fish summary including total number of fish, rarest fish, and most common type of fish.  If show_plot is set to TRUE, a histogram of the number of fish caught by species will also be returned.
+#' @author Alex Milward, Leana Goetze, Allison Bailey
+#' @example fish_distribution(fish_data, show_plot = TRUE)
 
 # fish_data = raw .txt file listing fish that were caught
 
