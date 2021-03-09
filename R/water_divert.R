@@ -10,20 +10,20 @@
 
 water_diverted = function(diversion) {
   #add error checking here
-  if (diversions < 0)
-    return("diversions must be positive value")
+  if (diversion < 0)
+    return("diversion must be positive value")
 
   day = 0
   flow_avg = 1500 #minimum flow of 1500 cfs
 
   while ( (flow_avg >= 1000) && (day < 200)) {
     # water right only allows for less than 200 diversion days/year
-    # diverting at 50 cfs/day
-    flow_avg = flow_avg - 50
+    # diverting at certain amount per day (diversion)
+    flow_avg = flow_avg - diversion
     day = day + 1
   }
 
   #
-  results = day * diversions * 1.983 #conversion from cfs to acre-feet/day
+  results = day * diversion * 1.983 #conversion from cfs to acre-feet/day
   return(results)
 }
