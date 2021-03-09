@@ -1,4 +1,4 @@
-#' @title lightening_levels
+#' lightening_levels
 #'
 #' This function reports the numerical lightening levels and the categorization for each lightening level.
 #' @param lightening_levels data frame that lists fish that were caught
