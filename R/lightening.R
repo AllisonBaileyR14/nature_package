@@ -1,12 +1,10 @@
-#' lightening_levels
+#' lightening
 #'
 #' This function reports the numerical lightening levels and the categorization for each lightening level.
-#' @param lightening_levels data frame that lists fish that were caught
+#' @param i lightning activity level (ranges from 1-6)
 #' @return A lightening summary of lightening levels categorized.
 #' @author Allison Bailey
-#' @example lightening_levels(5) The number of levels you want omitted.
-
-
+#' @example lightening(i=5)
 
 # Lightening Activity Levels
 # Lightning Activity Level is rated on a scale of 1 to 6 as described below:
@@ -29,7 +27,7 @@
 
 library(tidyverse)
 
-lightening_levels <- function(i=0) while(i<6)
+lightening = function(i=0) while(i<6)
 {i=i+1
 print(case_when(i==1~"None",
                 i==2~"Occasional Thunderstorms",
@@ -42,4 +40,4 @@ i=ifelse((i<0), return("Lightening Levels must be greater than zero"), i)
 }
 
 
-rm(list = c("lightening_levels"))
+#rm(list = c("lightening_levels"))
