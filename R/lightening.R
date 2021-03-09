@@ -40,5 +40,5 @@ i=ifelse((i<0), return("Lightening Levels must be greater than zero"), i)
 
 }
 
+#rm(list = c("lightening"))
 
-rm(list = c("lightening"))
