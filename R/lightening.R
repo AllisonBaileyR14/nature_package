@@ -28,7 +28,7 @@
 
 #library(tidyverse)
 
-lightening = function(i=0) while(i<6)
+lightening <- function(i=0) while(i<6)
 {i=i+1
 print(case_when(i==1~"None",
                 i==2~"Occasional Thunderstorms",
@@ -41,4 +41,4 @@ i=ifelse((i<0), return("Lightening Levels must be greater than zero"), i)
 }
 
 
-#rm(list = c("lightening_levels"))
+rm(list = c("lightening"))
