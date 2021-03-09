@@ -5,6 +5,7 @@
 #' @return A lightening summary of lightening levels categorized.
 #' @author Allison Bailey
 #' @example lightening(i=5)
+#' @Source: National Park Service - https://www.nps.gov/articles/understanding-fire-danger.htm
 
 # Lightening Activity Levels
 # Lightning Activity Level is rated on a scale of 1 to 6 as described below:
@@ -21,7 +22,7 @@
 
 # LAL 6— A dry lightning situation. Low lightning flash rate observed (less than one to three cloud-to-ground strikes per 5-minute period per storm cell passage). Scattered towering clouds with a few thunderstorms; bases of the clouds are high. Virga is the predominate form of precipitation.
 
-# Source: National Park Service - https://www.nps.gov/articles/understanding-fire-danger.htm
+
 
 
 
