@@ -1,13 +1,14 @@
-# water_diverted
-# caculates daily water diverted in acre-feet so long as flow is greater than 1000 cfs
-# and water rights holders only divert for 200 days per year
-#
-#
-# parameters: diversions (cfs), days
+#' water_diverted
+#'
+#' This function calculates total water diverted in acre-feet so long as flow is greater than 1000 cfs and water users only divert for at most 200 days per year
+#' @param diversion is the amount of water diverted (cubic feet per second)
+#' @return Total water diverted in acre-feet
+#' @author Alex Milward
+#' @example water_diverted(diversion)
 
 
 
-water_diverted = function(diversions, days) {
+water_diverted = function(diversion) {
   #add error checking here
   if (diversions < 0)
     return("diversions must be positive value")
