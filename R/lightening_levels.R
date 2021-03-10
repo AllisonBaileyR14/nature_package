@@ -18,7 +18,7 @@
 #' @source National Park Service - https://www.nps.gov/articles/understanding-fire-danger.htm
 
 
-lightening_levels <- function(light_level=0, show_levels = FALSE, month_prob = TRUE) while(light_level < 6) {
+lightening_levels = function(light_level=0, show_levels = FALSE, month_prob = TRUE) while(light_level < 6) {
     if(show_levels == TRUE)
   {
     return(light_level=light_level+1)
