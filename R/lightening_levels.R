@@ -14,10 +14,10 @@
 #' @return If show_levels = TRUE, A lightening summary of lightening levels categorized.
 #' @return If month_prob = TRUE, a 30 day probability summary of lightening levels each day will be generated.
 #' @author Allison Bailey
-#' @example lightening_levels(light_level=0, show_levels = FALSE, month_prob = TRUE)
+# @example lightening_levels(light_level=0, show_levels = FALSE, month_prob = TRUE)
 #' @source National Park Service - https://www.nps.gov/articles/understanding-fire-danger.htm
 
-library(tidyverse)
+# library(tidyverse)
 
 lightening_levels = function(light_level=0, show_levels = FALSE, month_prob = TRUE) while(light_level < 6) {
     if(show_levels == TRUE)
