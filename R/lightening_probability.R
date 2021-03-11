@@ -11,7 +11,7 @@
 #' LAL 6— A dry lightning situation. Low lightning flash rate observed (less than one to three cloud-to-ground strikes per 5-minute period per storm cell passage). Scattered towering clouds with a few thunderstorms; bases of the clouds are high. Virga is the predominate form of precipitation.
 #' @return Frequency of each lightening level occurrence.
 #' @author Allison Bailey
-#' @example lightening_levels(200)
+# @example lightening_probability(250)
 #' @source National Park Service - https://www.nps.gov/articles/understanding-fire-danger.htm
 
 # library(tidyverse)
