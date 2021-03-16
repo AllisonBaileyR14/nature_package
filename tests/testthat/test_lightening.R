@@ -1,9 +1,10 @@
-library(testthat)
-library(Nature)
+#library(testthat)
+#library(Nature)
 
 
-source("R/lightening_probability.R")
+#source("R/lightening_probability.R")
 
-test_that("Probability frequency will return an error if lightening sample is zero", {
-  expect_error(lightening_sample(0))
+test_that("lightening_works", {
+
+expect_equal(lightening_probability(0), "Lightening Sample must be greater than zero")
 })

@@ -17,6 +17,8 @@
 # library(tidyverse)
 
   lightening_probability = function(lightening_sample = 100){
+    ifelse((lightening_sample <=0), return("Lightening Sample must be greater than zero"),
+           lightening_sample)
     throws <- sample(1:6, lightening_sample, rep = T)
     frequency <- table(throws)/lightening_sample
     barplot(frequency, main = "Lightening Level Probability")
@@ -25,8 +27,7 @@
     return(frequency)
 
 
-    lightening_sample=ifelse((lightening_sample <0), return("Lightening Sample must be greater than zero"),
-                       lightening_sample)
+
 
   }
 
